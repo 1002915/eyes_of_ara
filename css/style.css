@@ -106,12 +106,17 @@ body {
 
 .content {
   position: relative;
-  margin-top:calc(100% * 1.03);
+  margin-top:calc(100% * 1.09);
   background: #000;
   width: 100%;
   min-height: 1500px;
   box-sizing: border-box;
   z-index:0;
+}
+@media screen and (min-width: 1400px) {
+  .content {
+      margin-top:calc(100% * 1.0);
+  }
 }
 
 @media screen and (max-width: 740px) {
