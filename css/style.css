@@ -56,20 +56,20 @@ body {
 .layer-9 {
   z-index: 15;
   background-image: url('../images/parallax/leaningTower.png');
-  margin-top:13%;
+  margin-top:calc(100% / 7.5);
 }
 
 .layer-4 {
   z-index: 20;
   background-image: url('../images/parallax/mainSection.png');
-  margin-top:13%;
+  margin-top:calc(100% / 7.5);
   padding-top:80%;
 }
 
 .release {
     z-index: 50;
     background-image: url('../images/parallax/logo.png');
-    margin-top:9%;
+    margin-top:calc(100% / 20);
 }
 
 @media screen and (max-width: 700px) {
@@ -84,38 +84,58 @@ body {
 .layer-6 {
     z-index: 30;
     background-image: url('../images/parallax/leftForeground.png');
-    margin-top:16%;
+    margin-top:calc(100% / 5.1);
 }
 
-.layer-7 {
-    z-index: 35;
-    background-image: url('../images/parallax/rightForeground.png');
-    margin-top:30%;
-}
 
 /* END PARALLAX SETTINGS */
 
 /* CONTENT CONTAINS EVERYTHING AND HAS NO MAX WIDTH */
 
 .content:before {
-    background-image: url('../images/gradient.png');
+    background-image: url('../images/parallax/rightForeground.png');
     background-size: cover;
     content: "";
     display: block;
     width: 100%;
-    height: 60px;
-    margin-top: -50px;
+    margin-top: -50%;
+    padding-top: 56.25%;
     position: absolute;
+    z-index:-1;
 }
 
 .content {
   position: relative;
-  margin-top:120%;
+  margin-top:calc(100% * 1.03);
   background: #000;
   width: 100%;
   min-height: 1500px;
   box-sizing: border-box;
   z-index:0;
+}
+
+@media screen and (max-width: 740px) {
+  .content {
+  margin-top:calc(100% * 1.1);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+  margin-top:calc(100% * 1.14);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+  margin-top:calc(100% * 1.21);
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .content {
+  margin-top:calc(100% * 1.32);
+  }
 }
 
 .container {
