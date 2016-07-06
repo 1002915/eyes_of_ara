@@ -106,41 +106,53 @@ body {
 
 .content {
   position: relative;
-  margin-top:calc(100% * 0.95);
+  margin-top:calc(56.25% + 300px);
   background: #000;
   width: 100%;
   min-height: 1500px;
   box-sizing: border-box;
   z-index:0;
 }
-@media screen and (min-width: 2000px) {
+
+@media screen and (min-width: 450px ) and (max-width: 550px) {
   .content {
-      margin-top:calc(100% * 1.05);
+  margin-top:calc(56.25% + 300px);
+  }
+} 
+
+@media screen and (min-width: 550px ) and (max-width: 665px) {
+  .content {
+  margin-top:calc(56.25% + 330px);
+  }
+} 
+
+@media screen and (min-width: 665px ) and (max-width: 850px) {
+  .content {
+  margin-top:calc(56.25% + 370px);
+  }
+} 
+
+@media screen and (min-width: 850px ) and (max-width: 960px) {
+  .content {
+  margin-top:calc(56.25% + 415px);
   }
 }
 
-
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 960px ) and (max-width: 1100px) {
   .content {
-  margin-top:calc(100% * 1.1);
+  margin-top:calc(56.25% + 470px);
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 1100px ) and (max-width: 1400px) {
   .content {
-  margin-top:calc(100% * 1.14);
+  margin-top:calc(56.25% + 480px);
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 1400px ) {
   .content {
-  margin-top:calc(100% * 1.21);
-  }
-}
-
-@media screen and (max-width: 401px) {
-  .content {
-  margin-top:calc(100% * 1.32);
+  margin-top:100%;
   }
 }
 
@@ -509,7 +521,7 @@ a.button  {
   height: 74px;
   position: relative;
   box-sizing: border-box;
-  margin:10px;
+  margin:-40px 10px 10px 10px;
 }
 
 
