@@ -114,6 +114,18 @@ body {
   z-index:0;
 }
 
+@media screen and (min-width: 100px ) and (max-width: 320px) {
+  .content {
+  margin-top:calc(56.25% + 240px);
+  }
+} 
+
+@media screen and (min-width: 320px ) and (max-width: 450px) {
+  .content {
+  margin-top:calc(56.25% + 280px);
+  }
+} 
+
 @media screen and (min-width: 450px ) and (max-width: 550px) {
   .content {
   margin-top:calc(56.25% + 300px);
@@ -140,7 +152,7 @@ body {
 
 @media screen and (min-width: 960px ) and (max-width: 1100px) {
   .content {
-  margin-top:calc(56.25% + 470px);
+  margin-top:calc(56.25% + 445px);
   }
 }
 
@@ -170,13 +182,10 @@ body {
 
 .youtubeContainer {
   position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  margin-top:30px;
-  height:0;
+  margin: 20px 0px 20px 0px;
   overflow:hidden;
   width:100%;
-  margin-bottom:20px;
+  height:400px;
   box-sizing: border-box;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -201,9 +210,17 @@ body {
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 10px;
   margin: 10px 10px 30px 10px;
 }
+
+@media screen and (min-width: 100px ) and (max-width: 320px) {
+  .reviewText h2 {
+    font-size: 1.2em;
+  }
+  .reviewText h1 {
+    font-size: 1.7em;
+  }
+} 
 
 .writeUp {
   width: 100%;
@@ -233,6 +250,7 @@ footer {
   padding: 10px;
   flex-wrap: wrap;
   flex-direction: column;
+  color:#f2f2f2;
 }
 
 .steam { 
@@ -343,7 +361,6 @@ label {
   display: block;
   float: left;
   width: 60%;
-  min-width: 200px;
   padding: 12px 10px 11px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -532,21 +549,27 @@ a.button  {
   }
 }
 
-@media screen and (max-width: 475px) {
+
+
+@media screen and (min-width:200px) and (max-width: 475px) {
   .humbleButton, .steamButton {
-      width: 133px;
-      height:33px;
+      width: 300px;
+      height:78px;
+      margin: 0px;
   }
 
   .reviewText {
-    margin-bottom:0px;
+    margin:0px;
     padding-bottom:0px;
   }
+
 }
 
 .humbleButton:hover{
   background-image: url('../images/highlight.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:center center;
 }
 
 .steamButton:hover {
@@ -569,10 +592,9 @@ a.button  {
   max-width:594px;
   height:100%;
   max-height:32px;
-  margin-bottom:30px;
-  margin: 0 auto;
+  margin: 30px 0 30px 0;
   display:block;
-  margin-top:20px;
+
 }
 
 .widget-theme-light .widget {
@@ -596,14 +618,21 @@ a.button  {
   color: #ab8e41;
 }
 
-@media screen and (max-width: 872px) {
+@media screen and (min-width: 741px) and(max-width: 872px) {
   .reviewText h1, .writeUp h1 {
-    font-size:2.5em;
+    font-size:2.8em;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 321px) and (max-width: 740px) {
   .reviewText h1, .writeUp h1 {
-    font-size:2em;
+    font-size:2.8em;
   }
+  h1 {
+    font-size: 2.8em;
+  }
+}
+
+.space {
+  margin-bottom: 60px;
 }
