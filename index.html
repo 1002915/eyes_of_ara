@@ -13,6 +13,7 @@
 </head>
 <body>
   <div class="parallax-container">
+
     <div class="parallax-layer layer-0" data-parallax-speed="0.02" data-max-scroll="1250"></div>
     <div class="parallax-layer layer-1" data-parallax-speed="0.04" data-max-scroll="1250"></div>
     <div class="parallax-layer layer-2" data-parallax-speed="0.08" data-max-scroll="1250"></div>
@@ -21,6 +22,7 @@
     <div class="parallax-layer layer-4" data-parallax-speed="0.16" data-max-scroll="1250"></div>
     <div class="parallax-layer layer-6" data-parallax-speed="0.45" data-max-scroll="1250"></div>
     <div class="parallax-layer layer-7" data-parallax-speed="1.00" data-max-scroll="1250"></div>
+        <div class="se-pre-con"></div>
     <div class="parallax-layer release" data-parallax-speed="0.50" data-max-scroll="2150"></div>
   </div>
 
@@ -184,4 +186,12 @@ $(document).ready(function() {
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+  </script>
 </html>
