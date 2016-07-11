@@ -102,6 +102,7 @@ body {
     padding-top: 56.25%;
     position: absolute;
     z-index:-1;
+    pointer-events:none;
 }
 
 .content {
@@ -111,7 +112,7 @@ body {
   width: 100%;
   min-height: 1500px;
   box-sizing: border-box;
-  z-index:99;
+  z-index:90;
 }
 
 @media screen and (min-width: 100px ) and (max-width: 320px) {
@@ -188,7 +189,12 @@ body {
   padding-bottom: 56.25%;
   box-sizing: border-box;
   display:table;
+}
 
+.clicker {
+    margin: 0 auto;
+    position: absolute;
+    display:inline-block;
 }
 
 .iframer {
