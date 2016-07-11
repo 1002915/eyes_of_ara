@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color:#000;
 }
+
 /* SOCIAL MEDIA CONTAINER */
 .share_box{
   position:fixed;
@@ -18,7 +19,6 @@ body {
 	overflow: visible;
 	width: 100%;
 	box-sizing:border-box;
-
 }
 
 .parallax-layer {
@@ -87,7 +87,6 @@ body {
     margin-top:calc(100% / 5.1);
 }
 
-
 /* END PARALLAX SETTINGS */
 
 /* CONTENT CONTAINS EVERYTHING AND HAS NO MAX WIDTH */
@@ -114,7 +113,7 @@ body {
   box-sizing: border-box;
   z-index:90;
 }
-
+/* These media queries are for the content - they make sure the ::After element covers the water of the parallax image */
 @media screen and (min-width: 100px ) and (max-width: 320px) {
   .content {
   margin-top:calc(56.25% + 240px);
@@ -236,7 +235,6 @@ body {
   color:#ddba5a;
   padding: 20px;
   margin: 20px 0px 10px 0px;
-
 }
 
 .writeUp h3 {
@@ -297,6 +295,7 @@ footer iframe {
   display: block;
   margin: 0 auto;
 }
+
 .share_box{
   position:fixed;
   width:50px;
@@ -311,7 +310,6 @@ h1.trailerButton {
   margin-bottom: 20px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
   color: #ffffff;
-
 }
 
 #single_1 {
@@ -404,14 +402,14 @@ label {
 }
 
 .success a {
-    color: #5ca000;
-    text-decoration: underline;
+  color: #5ca000;
+  text-decoration: underline;
 }
 
 .rounded {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 
 .button, .button-small {
@@ -480,7 +478,6 @@ label {
   margin-bottom:100px;
   margin: 0 auto;
   display:block;
-
 }
 
 .button, .button:visited {
@@ -551,25 +548,22 @@ a.button  {
 
 @media screen and (max-width: 675px) {
   .humbleButton, .steamButton {
-      width: 200px;
-      height:50px;
+    width: 200px;
+    height:50px;
   }
 }
 
-
-
 @media screen and (min-width:200px) and (max-width: 475px) {
   .humbleButton, .steamButton {
-      width: 300px;
-      height:78px;
-      margin: 0px;
+    width: 300px;
+    height:78px;
+    margin: 0px;
   }
 
   .reviewText {
     margin:0px;
     padding-bottom:0px;
   }
-
 }
 
 .humbleButton:hover{
@@ -601,7 +595,6 @@ a.button  {
   display:block;
   margin: 0 auto;
   padding: 20px 0px 20px 0px;
-
 }
 
 .widget-theme-light .widget {
