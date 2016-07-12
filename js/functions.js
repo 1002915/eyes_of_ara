@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#single_1").fancybox({
+    $(".single_2").fancybox({
           helpers: {
               title : {
                   type : 'float'

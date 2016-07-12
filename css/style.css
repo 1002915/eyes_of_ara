@@ -6,11 +6,10 @@ body {
 /* SOCIAL MEDIA CONTAINER */
 .share_box{
   position:fixed;
-  width:50px;
   padding:15px;
   z-index: 1;
-  bottom:40px;
-  right:80px;
+  width:50px;
+  bottom:1px;
 }
 
 /* PARALLAX SETTINGS HERE */
@@ -298,7 +297,6 @@ footer iframe {
 
 .share_box{
   position:fixed;
-  width:50px;
   padding:15px;
   z-index: 99;
 }
@@ -312,7 +310,7 @@ h1.trailerButton {
   color: #ffffff;
 }
 
-#single_1 {
+.single_2 {
   width: calc(100% / 3);
   display: inline-block;
   box-sizing:border-box;
@@ -320,13 +318,13 @@ h1.trailerButton {
 }
 
 @media screen and (max-width: 700px) {
-  #single_1 {
+  .single_2 {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 700px) {
-  #single_1 {
+  .single_2 {
     width: 100%;
   }
 }
@@ -425,7 +423,7 @@ label {
   font-weight: bold;
   font-style: normal;
   font-size: 14px;
-  cursor: pointer;∂
+  cursor: pointer;
   border: 0;
   vertical-align: top;
   -webkit-font-smoothing: antialiased;
@@ -651,3 +649,20 @@ a.button  {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.twitterFrame {
+  width: 126px; 
+  height: 46px;
+  border:none;
+  overflow:hidden; 
+  border:none;
+  background-color:transparent;
+}
+
+.humbleFrame {
+  width: 546px;
+  height: 353px;
+  border:none;
+  overflow:hidden;
+}
+
