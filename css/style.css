@@ -14,22 +14,28 @@ body {
 
 /* PARALLAX SETTINGS HERE */
 .parallax-container {
-	position: fixed;
-	overflow: visible;
-	width: 100%;
-	box-sizing:border-box;
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+@media screen and (max-width: 401px) {
+  .parallax-layer {
+    display:none;
+  }
 }
 
 .parallax-layer {
-	width: 100%;
+  width: 100%;
   padding-top:56.25%;
-	box-sizing:border-box;
-	position: fixed;
-	left: 0;
-	top: 0;
-	background-position:;
-	background-repeat: no-repeat;
-	background-size: 100%;
+  box-sizing:border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position:;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /* PARALLAX LAYER STYLES */
@@ -325,7 +331,7 @@ h1.trailerButton {
 
 @media screen and (max-width: 700px) {
   .single_2 {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -431,8 +437,8 @@ label {
 }
 
 .button:hover, .button-small:hover {
-  opacity: .8;
-  background-color: rgba( 255, 255, 255, 0.8);
+  color: white;
+  background-color: #f9dc93;
 }
 
 
@@ -459,7 +465,7 @@ label {
 
 @media screen and (max-width: 494px) {
   h3 {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
@@ -622,12 +628,21 @@ a.button  {
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 740px) {
+@media screen and (min-width: 401px) and (max-width: 740px) {
   .reviewText h1, .writeUp h1 {
     font-size:2.8em;
   }
   h1 {
     font-size: 2.8em;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 401px) {
+  .reviewText h1, .writeUp h1 {
+    font-size:2em;
+  }
+  h1 {
+    font-size: 2em;
   }
 }
 
@@ -664,5 +679,60 @@ a.button  {
   height: 353px;
   border:none;
   overflow:hidden;
+  margin-top: 20px;
+  margin-bottom:-20px;
 }
 
+@media screen and (max-width: 490px) {
+  .humbleFrame {
+    height: 160px;
+  }
+  #subscribe-form {
+    margin:20px 0px 0px 0px;
+  }
+}
+
+.mobile {
+  background: url(../images/mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:absolute;
+  top: 0px;
+  z-index: 1;
+  display:none;
+  width:100%;
+  height:40%;
+}
+
+.copyright {
+  font-size: 0.7em;
+  margin-bottom:10px;
+}
+
+@media screen and (max-width: 401px) {
+  .mobile {
+  display: inline-block;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .single_2 {
+    width:50%;
+  }
+  .writeUp {
+    margin:0px 0px 0px 0px;
+    padding-bottom: 0px;
+  }
+  .divider.space {
+    margin-bottom: 0px;
+  }
+
+  .humbleButton img {
+    height:80%;
+  }
+
+  .steamButton img {
+    height:80%;
+  }
+}
